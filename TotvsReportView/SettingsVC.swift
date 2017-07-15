@@ -17,6 +17,7 @@ class SettingsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         ipTxtField.text = UserDefaults.standard.string(forKey: "ip")
         userTxtField.text = UserDefaults.standard.string(forKey: "user")
         passTxtField.text = UserDefaults.standard.string(forKey: "pass")

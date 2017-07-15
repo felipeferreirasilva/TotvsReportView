@@ -24,8 +24,8 @@ class Connection:  SettingsVC, SQLClientDelegate {
     func openConnection(ip: String, user: String, pass: String, db: String, query: String) {
         client.delegate = self
         client.connect(ip, username: user, password: pass, database: db) { success in
-            self.client.execute(query, completion: { (_ results: ([Any]?)) in
-                if results != nil {
+            if success {
+                self.client.execute(query, completion: { (_ results: ([Any]?)) in
                     for table in results as! [[[String:AnyObject]]] {
                         for row in table {
                             for (columnName, value) in row {
@@ -33,9 +33,9 @@ class Connection:  SettingsVC, SQLClientDelegate {
                             }
                         }
                     }
-                }
-                self.client.disconnect()
-            })
+                    self.client.disconnect()
+                })
+            }
         }
     }
 }
