@@ -11,7 +11,7 @@ import Foundation
 class ReportsComercial {
     
     func ClientePorCodigo (codigo: String) -> String {
-        let query = "SELECT A1_NOME FROM SA1010 WHERE D_E_L_E_T_=' ' AND A1_COD='\(codigo)'"
+        let query = "SELECT A1_NOME, A1_BAIRRO FROM SA1010 WHERE D_E_L_E_T_=' ' AND A1_COD='\(codigo)'"
         return query
     }
     
