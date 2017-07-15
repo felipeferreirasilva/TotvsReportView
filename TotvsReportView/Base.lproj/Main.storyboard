@@ -388,8 +388,8 @@
                                             <action selector="voltarBtnPressed:" destination="wsv-wH-hmS" eventType="touchUpInside" id="uj8-Qg-HM3"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faturamento por data" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0Xp-pI-gIH">
-                                        <rect key="frame" x="58" y="38" width="257" height="74"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FATURAMENTO POR DATA" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0Xp-pI-gIH">
+                                        <rect key="frame" x="58" y="38" width="247" height="74"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="74" id="Pva-oI-PUI"/>
                                         </constraints>
@@ -400,7 +400,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.20077371599999999" green="0.58286780120000004" blue="0.75754421949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="0Xp-pI-gIH" secondAttribute="trailing" constant="5" id="B9W-NG-JG7"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Xp-pI-gIH" secondAttribute="trailing" constant="15" id="B9W-NG-JG7"/>
                                     <constraint firstAttribute="height" constant="128" id="bhZ-6K-AYV"/>
                                     <constraint firstItem="K5j-ar-gqD" firstAttribute="leading" secondItem="N4w-Rj-7Ah" secondAttribute="leading" constant="8" id="dX2-Wx-ay2"/>
                                     <constraint firstItem="0Xp-pI-gIH" firstAttribute="leading" secondItem="K5j-ar-gqD" secondAttribute="trailing" id="hDq-Mn-h0E"/>
