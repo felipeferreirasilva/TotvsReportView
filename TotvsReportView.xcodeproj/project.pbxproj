@@ -19,6 +19,7 @@
 		38C7EECA1F1976D600F4B39C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38C7EEC81F1976D600F4B39C /* Main.storyboard */; };
 		38C7EECC1F1976D600F4B39C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38C7EECB1F1976D600F4B39C /* Assets.xcassets */; };
 		38C7EECF1F1976D600F4B39C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38C7EECD1F1976D600F4B39C /* LaunchScreen.storyboard */; };
+		38DD5CC71F1A5BEB00849BB1 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD5CC61F1A5BEB00849BB1 /* SettingsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		38C7EECB1F1976D600F4B39C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38C7EECE1F1976D600F4B39C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38C7EED01F1976D600F4B39C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38DD5CC61F1A5BEB00849BB1 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				38C7EEC61F1976D600F4B39C /* MainVC.swift */,
+				38DD5CC61F1A5BEB00849BB1 /* SettingsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				384987171F19998400EDF078 /* Connection.swift in Sources */,
 				38C7EEC51F1976D600F4B39C /* AppDelegate.swift in Sources */,
 				380201201F1992AC00A993FC /* SQLClient.m in Sources */,
+				38DD5CC71F1A5BEB00849BB1 /* SettingsVC.swift in Sources */,
 				380201221F1992C900A993FC /* MSSQLSwift.xcdatamodel in Sources */,
 				384987191F199E7F00EDF078 /* ReportsFaturamento.swift in Sources */,
 			);
