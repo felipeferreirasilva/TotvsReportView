@@ -11,6 +11,9 @@
 		380201201F1992AC00A993FC /* SQLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 380201171F1992AC00A993FC /* SQLClient.m */; };
 		380201221F1992C900A993FC /* MSSQLSwift.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 380201211F1992C900A993FC /* MSSQLSwift.xcdatamodel */; };
 		380201251F1992FF00A993FC /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 380201241F1992FF00A993FC /* libiconv.tbd */; };
+		384987171F19998400EDF078 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384987161F19998400EDF078 /* Connection.swift */; };
+		384987191F199E7F00EDF078 /* ReportsFaturamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384987181F199E7F00EDF078 /* ReportsFaturamento.swift */; };
+		3849871B1F19A55700EDF078 /* ReportsComercial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3849871A1F19A55700EDF078 /* ReportsComercial.swift */; };
 		38C7EEC51F1976D600F4B39C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7EEC41F1976D600F4B39C /* AppDelegate.swift */; };
 		38C7EEC71F1976D600F4B39C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7EEC61F1976D600F4B39C /* MainVC.swift */; };
 		38C7EECA1F1976D600F4B39C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38C7EEC81F1976D600F4B39C /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 		3802011E1F1992AC00A993FC /* MSSQLSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MSSQLSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		380201211F1992C900A993FC /* MSSQLSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MSSQLSwift.xcdatamodel; sourceTree = "<group>"; };
 		380201241F1992FF00A993FC /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		384987161F19998400EDF078 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		384987181F199E7F00EDF078 /* ReportsFaturamento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsFaturamento.swift; sourceTree = "<group>"; };
+		3849871A1F19A55700EDF078 /* ReportsComercial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsComercial.swift; sourceTree = "<group>"; };
 		38C7EEC11F1976D600F4B39C /* TotvsReportView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TotvsReportView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38C7EEC41F1976D600F4B39C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38C7EEC61F1976D600F4B39C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -89,6 +95,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		384987131F19989700EDF078 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				38C7EEC61F1976D600F4B39C /* MainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		384987141F1998A200EDF078 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		384987151F1998A700EDF078 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				384987161F19998400EDF078 /* Connection.swift */,
+				384987181F199E7F00EDF078 /* ReportsFaturamento.swift */,
+				3849871A1F19A55700EDF078 /* ReportsComercial.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		38C7EEB81F1976D600F4B39C = {
 			isa = PBXGroup;
 			children = (
@@ -110,8 +141,10 @@
 			isa = PBXGroup;
 			children = (
 				3802010F1F19928D00A993FC /* SQLConnect */,
+				384987151F1998A700EDF078 /* Model */,
+				384987141F1998A200EDF078 /* View */,
+				384987131F19989700EDF078 /* Controller */,
 				38C7EEC41F1976D600F4B39C /* AppDelegate.swift */,
-				38C7EEC61F1976D600F4B39C /* MainVC.swift */,
 				38C7EEC81F1976D600F4B39C /* Main.storyboard */,
 				38C7EECB1F1976D600F4B39C /* Assets.xcassets */,
 				38C7EECD1F1976D600F4B39C /* LaunchScreen.storyboard */,
@@ -194,10 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3849871B1F19A55700EDF078 /* ReportsComercial.swift in Sources */,
 				38C7EEC71F1976D600F4B39C /* MainVC.swift in Sources */,
+				384987171F19998400EDF078 /* Connection.swift in Sources */,
 				38C7EEC51F1976D600F4B39C /* AppDelegate.swift in Sources */,
 				380201201F1992AC00A993FC /* SQLClient.m in Sources */,
 				380201221F1992C900A993FC /* MSSQLSwift.xcdatamodel in Sources */,
+				384987191F199E7F00EDF078 /* ReportsFaturamento.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

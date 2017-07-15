@@ -8,31 +8,18 @@
 
 import UIKit
 
-class MainVC: UIViewController, SQLClientDelegate {
-
-    func error(_ error: String!, code: Int32, severity: Int32) {
-        print("\(error!) \(code) \(severity)")
-    }
-
+class MainVC: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let client = SQLClient.sharedInstance()!
-        client.delegate = self
-        client.connect("192.168.25.175", username: "sa", password: "sa", database: "Prod") { success in
-            client.execute("SELECT A1_NOME FROM SA1010 WHERE D_E_L_E_T_='' AND A1_COD='000749' ", completion: { (_ results: ([Any]?)) in
-                for table in results as! [[[String:AnyObject]]] {
-                    for row in table {
-                        for (columnName, value) in row {
-                            print("\(columnName) = \(value)")
-                        }
-                    }
-                }
-                client.disconnect()
-            })
-        }
-
+        let r = ReportsComercial()
+        let q = r.ClientePorCodigo(codigo: "000746")
+        
+        let c = Connection()
+        c.openConnection(ip: "192.168.25.175", user: "sa", pass: "sa", db: "Prod", query: q)
         
     }
+    
 }
 
