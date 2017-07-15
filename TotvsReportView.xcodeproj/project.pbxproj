@@ -7,17 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3802011F1F1992AC00A993FC /* libfreetds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 380201141F1992AC00A993FC /* libfreetds.a */; };
+		380201201F1992AC00A993FC /* SQLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 380201171F1992AC00A993FC /* SQLClient.m */; };
+		380201221F1992C900A993FC /* MSSQLSwift.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 380201211F1992C900A993FC /* MSSQLSwift.xcdatamodel */; };
+		380201251F1992FF00A993FC /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 380201241F1992FF00A993FC /* libiconv.tbd */; };
 		38C7EEC51F1976D600F4B39C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7EEC41F1976D600F4B39C /* AppDelegate.swift */; };
-		38C7EEC71F1976D600F4B39C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7EEC61F1976D600F4B39C /* ViewController.swift */; };
+		38C7EEC71F1976D600F4B39C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7EEC61F1976D600F4B39C /* MainVC.swift */; };
 		38C7EECA1F1976D600F4B39C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38C7EEC81F1976D600F4B39C /* Main.storyboard */; };
 		38C7EECC1F1976D600F4B39C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38C7EECB1F1976D600F4B39C /* Assets.xcassets */; };
 		38C7EECF1F1976D600F4B39C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38C7EECD1F1976D600F4B39C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		380201101F1992AC00A993FC /* bkpublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bkpublic.h; sourceTree = "<group>"; };
+		380201111F1992AC00A993FC /* cspublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cspublic.h; sourceTree = "<group>"; };
+		380201121F1992AC00A993FC /* cstypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cstypes.h; sourceTree = "<group>"; };
+		380201131F1992AC00A993FC /* ctpublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ctpublic.h; sourceTree = "<group>"; };
+		380201141F1992AC00A993FC /* libfreetds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfreetds.a; sourceTree = "<group>"; };
+		380201151F1992AC00A993FC /* odbcss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = odbcss.h; sourceTree = "<group>"; };
+		380201161F1992AC00A993FC /* SQLClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLClient.h; sourceTree = "<group>"; };
+		380201171F1992AC00A993FC /* SQLClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLClient.m; sourceTree = "<group>"; };
+		380201181F1992AC00A993FC /* sqldb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqldb.h; sourceTree = "<group>"; };
+		380201191F1992AC00A993FC /* sqlfront.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlfront.h; sourceTree = "<group>"; };
+		3802011A1F1992AC00A993FC /* sybdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sybdb.h; sourceTree = "<group>"; };
+		3802011B1F1992AC00A993FC /* syberror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = syberror.h; sourceTree = "<group>"; };
+		3802011C1F1992AC00A993FC /* sybfront.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sybfront.h; sourceTree = "<group>"; };
+		3802011D1F1992AC00A993FC /* tds_sysdep_public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tds_sysdep_public.h; sourceTree = "<group>"; };
+		3802011E1F1992AC00A993FC /* MSSQLSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MSSQLSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		380201211F1992C900A993FC /* MSSQLSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MSSQLSwift.xcdatamodel; sourceTree = "<group>"; };
+		380201241F1992FF00A993FC /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		38C7EEC11F1976D600F4B39C /* TotvsReportView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TotvsReportView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38C7EEC41F1976D600F4B39C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		38C7EEC61F1976D600F4B39C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		38C7EEC61F1976D600F4B39C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		38C7EEC91F1976D600F4B39C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38C7EECB1F1976D600F4B39C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38C7EECE1F1976D600F4B39C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,17 +50,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				380201251F1992FF00A993FC /* libiconv.tbd in Frameworks */,
+				3802011F1F1992AC00A993FC /* libfreetds.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3802010F1F19928D00A993FC /* SQLConnect */ = {
+			isa = PBXGroup;
+			children = (
+				380201101F1992AC00A993FC /* bkpublic.h */,
+				380201111F1992AC00A993FC /* cspublic.h */,
+				380201121F1992AC00A993FC /* cstypes.h */,
+				380201131F1992AC00A993FC /* ctpublic.h */,
+				380201141F1992AC00A993FC /* libfreetds.a */,
+				380201151F1992AC00A993FC /* odbcss.h */,
+				380201161F1992AC00A993FC /* SQLClient.h */,
+				380201171F1992AC00A993FC /* SQLClient.m */,
+				380201181F1992AC00A993FC /* sqldb.h */,
+				380201191F1992AC00A993FC /* sqlfront.h */,
+				3802011A1F1992AC00A993FC /* sybdb.h */,
+				3802011B1F1992AC00A993FC /* syberror.h */,
+				3802011C1F1992AC00A993FC /* sybfront.h */,
+				3802011D1F1992AC00A993FC /* tds_sysdep_public.h */,
+				3802011E1F1992AC00A993FC /* MSSQLSwift-Bridging-Header.h */,
+				380201211F1992C900A993FC /* MSSQLSwift.xcdatamodel */,
+			);
+			name = SQLConnect;
+			sourceTree = "<group>";
+		};
+		380201231F1992FF00A993FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				380201241F1992FF00A993FC /* libiconv.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		38C7EEB81F1976D600F4B39C = {
 			isa = PBXGroup;
 			children = (
 				38C7EEC31F1976D600F4B39C /* TotvsReportView */,
 				38C7EEC21F1976D600F4B39C /* Products */,
+				380201231F1992FF00A993FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,8 +109,9 @@
 		38C7EEC31F1976D600F4B39C /* TotvsReportView */ = {
 			isa = PBXGroup;
 			children = (
+				3802010F1F19928D00A993FC /* SQLConnect */,
 				38C7EEC41F1976D600F4B39C /* AppDelegate.swift */,
-				38C7EEC61F1976D600F4B39C /* ViewController.swift */,
+				38C7EEC61F1976D600F4B39C /* MainVC.swift */,
 				38C7EEC81F1976D600F4B39C /* Main.storyboard */,
 				38C7EECB1F1976D600F4B39C /* Assets.xcassets */,
 				38C7EECD1F1976D600F4B39C /* LaunchScreen.storyboard */,
@@ -97,6 +153,7 @@
 					38C7EEC01F1976D600F4B39C = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 97ZVCXEP4L;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,8 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38C7EEC71F1976D600F4B39C /* ViewController.swift in Sources */,
+				38C7EEC71F1976D600F4B39C /* MainVC.swift in Sources */,
 				38C7EEC51F1976D600F4B39C /* AppDelegate.swift in Sources */,
+				380201201F1992AC00A993FC /* SQLClient.m in Sources */,
+				380201221F1992C900A993FC /* MSSQLSwift.xcdatamodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,11 +322,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 97ZVCXEP4L;
 				INFOPLIST_FILE = TotvsReportView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TotvsReportView",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.felipeferreirasilva.TotvsReportView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TotvsReportView/MSSQLSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,11 +343,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 97ZVCXEP4L;
 				INFOPLIST_FILE = TotvsReportView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TotvsReportView",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.felipeferreirasilva.TotvsReportView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TotvsReportView/MSSQLSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +378,7 @@
 				38C7EED51F1976D600F4B39C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
