@@ -9,26 +9,33 @@
 import Foundation
 import UIKit
 
-class Connection{
+class Connection:  SettingsVC, SQLClientDelegate {
+    let client = SQLClient.sharedInstance()!
+    
+    func error(_ error: String!, code: Int32, severity: Int32) {
+        print("\(error!) \(code) \(severity)")
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        client.delegate = self
+    }
 
     func openConnection(ip: String, user: String, pass: String, db: String, query: String) {
-        let client = SQLClient.sharedInstance()!
+        client.delegate = self
         client.connect(ip, username: user, password: pass, database: db) { success in
-            client.execute(query, completion: { (_ results: ([Any]?)) in
-                
-                for table in results as! [[[String:AnyObject]]] {
-                    for row in table {
-                        for (columnName, value) in row {
-                            print("\(columnName) = \(value)")
+            self.client.execute(query, completion: { (_ results: ([Any]?)) in
+                if results != nil {
+                    for table in results as! [[[String:AnyObject]]] {
+                        for row in table {
+                            for (columnName, value) in row {
+                                print("\(columnName) = \(value)")
+                            }
                         }
                     }
                 }
-                
-                client.disconnect()
+                self.client.disconnect()
             })
         }
-        
-        
     }
-    
 }
