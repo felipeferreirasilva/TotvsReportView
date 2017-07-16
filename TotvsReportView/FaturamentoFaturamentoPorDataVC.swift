@@ -17,4 +17,5 @@ class FaturamentoFaturamentoPorDataVC: UIViewController {
     @IBAction func voltarBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
 }

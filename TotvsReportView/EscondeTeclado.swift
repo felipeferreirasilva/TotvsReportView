@@ -9,6 +9,7 @@
 import UIKit
 
 extension SettingsVC {
+    
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SettingsVC.dismissKeyboard))
         tap.cancelsTouchesInView = false
@@ -18,4 +19,5 @@ extension SettingsVC {
     func dismissKeyboard() {
         view.endEditing(true)
     }
+    
 }

@@ -70,6 +70,7 @@
  */
 @property (nonatomic, weak) NSOperationQueue* callbackQueue;
 
+
 /**
  *  The character set to use for converting the UCS-2 server results. Default is UTF-8.
  Can be overridden to any charset supported by the iconv library.
@@ -117,5 +118,7 @@
  *  Disconnects from database server
  */
 - (void)disconnect;
+
+
 
 @end

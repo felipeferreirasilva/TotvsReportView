@@ -13,7 +13,5 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-}
 
-//192.168.25.175
+}

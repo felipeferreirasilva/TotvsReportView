@@ -23,6 +23,7 @@
 		38C7EECC1F1976D600F4B39C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38C7EECB1F1976D600F4B39C /* Assets.xcassets */; };
 		38C7EECF1F1976D600F4B39C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38C7EECD1F1976D600F4B39C /* LaunchScreen.storyboard */; };
 		38DD5CC71F1A5BEB00849BB1 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD5CC61F1A5BEB00849BB1 /* SettingsVC.swift */; };
+		38DE55EF1F1BACF400CBFB07 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE55EE1F1BACF400CBFB07 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		38C7EECE1F1976D600F4B39C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38C7EED01F1976D600F4B39C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38DD5CC61F1A5BEB00849BB1 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		38DE55EE1F1BACF400CBFB07 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				384987161F19998400EDF078 /* Connection.swift */,
 				384987181F199E7F00EDF078 /* ReportsFaturamento.swift */,
 				3849871A1F19A55700EDF078 /* ReportsComercial.swift */,
+				38DE55EE1F1BACF400CBFB07 /* Constants.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				380201221F1992C900A993FC /* MSSQLSwift.xcdatamodel in Sources */,
 				389AA20D1F1A9C1A00E26618 /* EscondeTeclado.swift in Sources */,
 				384987191F199E7F00EDF078 /* ReportsFaturamento.swift in Sources */,
+				38DE55EF1F1BACF400CBFB07 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

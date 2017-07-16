@@ -13,7 +13,6 @@ class SettingsVC: UIViewController {
     @IBOutlet weak var userTxtField: UITextField!
     @IBOutlet weak var passTxtField: UITextField!
     @IBOutlet weak var dbTxtField: UITextField!
-  
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,14 +42,11 @@ class SettingsVC: UIViewController {
         let q = r.FaturamentoPorData(de: "20170201", ate: "20170228")
         
         let c = Connection()
-        c.openConnection(
-                            ip: UserDefaults.standard.string(forKey: "ip")!,
-                            user: UserDefaults.standard.string(forKey: "user")!,
-                            pass: UserDefaults.standard.string(forKey: "pass")!,
-                            db: UserDefaults.standard.string(forKey: "db")!,
-                            query: q
-                        )
+        
+        c.openConnection(query: q){
+            print(c.status)
+        }
+        
     }
-    
 
 }
