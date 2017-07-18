@@ -150,7 +150,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLn-a7-ci5">
-                                        <rect key="frame" x="8" y="50" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="30" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="T1B-fc-vLI"/>
                                             <constraint firstAttribute="height" constant="50" id="qxf-Rb-g3r"/>
@@ -163,7 +163,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFIGURAÇÕES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvU-iU-5a7">
-                                        <rect key="frame" x="66" y="59" width="230" height="35"/>
+                                        <rect key="frame" x="66" y="39" width="230" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="Adb-lb-uFe"/>
                                             <constraint firstAttribute="width" constant="230" id="rS1-W9-C0Q"/>
@@ -172,14 +172,26 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tUW-Ky-3Sa">
+                                        <rect key="frame" x="8" y="80" width="304" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="DYj-jM-vLs"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.20077371599999999" green="0.58286780120000004" blue="0.75754421949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="0OF-bT-usC"/>
                                     <constraint firstItem="nvU-iU-5a7" firstAttribute="leading" secondItem="PLn-a7-ci5" secondAttribute="trailing" constant="8" id="7ce-t8-viP"/>
-                                    <constraint firstItem="PLn-a7-ci5" firstAttribute="top" secondItem="pMP-GS-E0x" secondAttribute="top" constant="50" id="L2q-Sc-yJN"/>
+                                    <constraint firstItem="PLn-a7-ci5" firstAttribute="top" secondItem="pMP-GS-E0x" secondAttribute="top" constant="30" id="L2q-Sc-yJN"/>
+                                    <constraint firstItem="tUW-Ky-3Sa" firstAttribute="top" secondItem="PLn-a7-ci5" secondAttribute="bottom" id="SUE-MD-1Pw"/>
+                                    <constraint firstItem="tUW-Ky-3Sa" firstAttribute="leading" secondItem="pMP-GS-E0x" secondAttribute="leading" constant="8" id="XUu-uL-HCn"/>
                                     <constraint firstItem="PLn-a7-ci5" firstAttribute="leading" secondItem="pMP-GS-E0x" secondAttribute="leading" constant="8" id="g2N-ed-GXI"/>
-                                    <constraint firstItem="nvU-iU-5a7" firstAttribute="top" secondItem="pMP-GS-E0x" secondAttribute="top" constant="59" id="xZW-i5-Clh"/>
+                                    <constraint firstItem="nvU-iU-5a7" firstAttribute="top" secondItem="pMP-GS-E0x" secondAttribute="top" constant="39" id="xZW-i5-Clh"/>
+                                    <constraint firstAttribute="trailing" secondItem="tUW-Ky-3Sa" secondAttribute="trailing" constant="8" id="y6b-QI-cw9"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Zzq-7X-YFA">
@@ -257,6 +269,7 @@
                     </view>
                     <connections>
                         <outlet property="dbTxtField" destination="iWP-YX-iPs" id="Q0Q-ds-pBv"/>
+                        <outlet property="infoTxtView" destination="tUW-Ky-3Sa" id="dmy-dO-1Wv"/>
                         <outlet property="ipTxtField" destination="K7I-d1-5zP" id="SJI-dR-5v0"/>
                         <outlet property="passTxtField" destination="no2-nZ-oF8" id="Jxc-jd-ean"/>
                         <outlet property="userTxtField" destination="2Ff-fG-rat" id="Gqh-XA-xed"/>
@@ -264,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOb-uS-Y9j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-328" y="804"/>
+            <point key="canvasLocation" x="-328.125" y="803.87323943661977"/>
         </scene>
         <!--FaturamentoVC-->
         <scene sceneID="yjI-iF-oIJ">

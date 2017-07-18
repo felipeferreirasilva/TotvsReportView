@@ -13,6 +13,7 @@ class SettingsVC: UIViewController, SQLClientDelegate {
     @IBOutlet weak var userTxtField: UITextField!
     @IBOutlet weak var passTxtField: UITextField!
     @IBOutlet weak var dbTxtField: UITextField!
+    @IBOutlet weak var infoTxtView: UITextView!    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,14 +55,14 @@ class SettingsVC: UIViewController, SQLClientDelegate {
         
         // EXECUTA METODO DE CONEXAO
         c.openConnection(query: q){
-            print(c.result)
+            self.infoTxtView.text = "Conectado com Sucesso"
         }
         
     }
     
     // CAPTURA ERROS DO SQL
     func error(_ error: String!, code: Int32, severity: Int32) {
-        print("\(error!) \(code) \(severity) ok")
+        self.infoTxtView.text = "\(error!)"
     }
 
 }
