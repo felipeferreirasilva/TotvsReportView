@@ -476,9 +476,6 @@
                                 <date key="minimumDate" timeIntervalSinceReferenceDate="507639600">
                                     <!--2017-02-01 11:00:00 +0000-->
                                 </date>
-                                <date key="maximumDate" timeIntervalSinceReferenceDate="509972400">
-                                    <!--2017-02-28 11:00:00 +0000-->
-                                </date>
                                 <locale key="locale" localeIdentifier="pt_BR"/>
                             </datePicker>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HxD-OG-5zO">
@@ -509,16 +506,16 @@
                                     <action selector="btnSalvarPressed:" destination="QHx-Nk-1ia" eventType="touchUpInside" id="15G-8G-Ujm"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSa-Lj-WJ5" userLabel="Resultado">
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mxO-OY-2kz">
                                 <rect key="frame" x="0.0" y="423" width="320" height="85"/>
                                 <color key="backgroundColor" red="0.96855324509999996" green="0.96866911649999998" blue="0.96851390599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="85" id="f1l-qh-dTD"/>
+                                    <constraint firstAttribute="height" constant="85" id="Huf-g1-3Mg"/>
                                 </constraints>
+                                <color key="textColor" red="0.36500363759999999" green="0.36450598890000002" blue="0.37319867229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.076990736992659764" green="0.077801165803108807" blue="0.077801165803108807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -526,7 +523,6 @@
                             <constraint firstItem="65l-nk-R9e" firstAttribute="top" secondItem="N4w-Rj-7Ah" secondAttribute="bottom" constant="20" id="1z8-aM-P3X"/>
                             <constraint firstAttribute="trailing" secondItem="65l-nk-R9e" secondAttribute="trailing" constant="5" id="2iU-hZ-InF"/>
                             <constraint firstItem="N4w-Rj-7Ah" firstAttribute="leading" secondItem="sJZ-je-dzf" secondAttribute="leading" id="3Es-XP-aus"/>
-                            <constraint firstItem="yNi-Kl-c0A" firstAttribute="top" secondItem="pSa-Lj-WJ5" secondAttribute="bottom" id="5RP-kr-iMM"/>
                             <constraint firstItem="Ea0-wH-ELY" firstAttribute="top" secondItem="jNu-S5-srn" secondAttribute="bottom" id="8xU-HW-jXu"/>
                             <constraint firstItem="65l-nk-R9e" firstAttribute="leading" secondItem="sJZ-je-dzf" secondAttribute="leading" constant="5" id="ByG-nk-4pa"/>
                             <constraint firstAttribute="trailing" secondItem="jNu-S5-srn" secondAttribute="trailing" id="Cep-az-U63"/>
@@ -534,12 +530,13 @@
                             <constraint firstItem="N4w-Rj-7Ah" firstAttribute="top" secondItem="sJZ-je-dzf" secondAttribute="top" id="JHl-xP-ZU5"/>
                             <constraint firstItem="Ea0-wH-ELY" firstAttribute="top" secondItem="yNi-Kl-c0A" secondAttribute="bottom" id="WeF-NK-5Ar"/>
                             <constraint firstItem="yNi-Kl-c0A" firstAttribute="leading" secondItem="sJZ-je-dzf" secondAttribute="leading" id="b84-qP-w3N"/>
+                            <constraint firstItem="yNi-Kl-c0A" firstAttribute="top" secondItem="mxO-OY-2kz" secondAttribute="bottom" id="eUc-P2-P2H"/>
                             <constraint firstAttribute="trailing" secondItem="yNi-Kl-c0A" secondAttribute="trailing" id="epW-KD-1aB"/>
                             <constraint firstItem="jNu-S5-srn" firstAttribute="leading" secondItem="sJZ-je-dzf" secondAttribute="leading" id="k1v-FO-hZf"/>
-                            <constraint firstItem="pSa-Lj-WJ5" firstAttribute="leading" secondItem="sJZ-je-dzf" secondAttribute="leading" id="pR8-Id-xsq"/>
                             <constraint firstItem="jNu-S5-srn" firstAttribute="top" secondItem="HxD-OG-5zO" secondAttribute="bottom" constant="8" id="r93-Jl-g3S"/>
                             <constraint firstAttribute="trailing" secondItem="HxD-OG-5zO" secondAttribute="trailing" id="rxU-K1-aGX"/>
-                            <constraint firstAttribute="trailing" secondItem="pSa-Lj-WJ5" secondAttribute="trailing" id="tHn-k5-seN"/>
+                            <constraint firstAttribute="trailing" secondItem="mxO-OY-2kz" secondAttribute="trailing" id="w0o-4H-bQ7"/>
+                            <constraint firstItem="mxO-OY-2kz" firstAttribute="leading" secondItem="sJZ-je-dzf" secondAttribute="leading" id="zho-D8-SXd"/>
                         </constraints>
                     </view>
                     <connections>
@@ -549,7 +546,7 @@
                         <outlet property="btnSalvar" destination="HxD-OG-5zO" id="fvo-ji-k7S"/>
                         <outlet property="datePicker" destination="jNu-S5-srn" id="ZgR-Cv-JQO"/>
                         <outlet property="infoTxtView" destination="jDh-Uv-1RE" id="gox-Lu-IZd"/>
-                        <outlet property="resultLbl" destination="pSa-Lj-WJ5" id="Afn-5E-6am"/>
+                        <outlet property="resultadoTxtView" destination="mxO-OY-2kz" id="7Ry-e3-K6t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Jm-D5-e19" userLabel="First Responder" sceneMemberID="firstResponder"/>

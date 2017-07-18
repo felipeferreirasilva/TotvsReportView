@@ -12,7 +12,7 @@ class FaturamentoFaturamentoPorDataVC: UIViewController, SQLClientDelegate {
     @IBOutlet weak var infoTxtView: UITextView!
     @IBOutlet weak var btnDtDe: UIButton!
     @IBOutlet weak var btnDtAte: UIButton!
-    @IBOutlet weak var resultLbl: UILabel!
+    @IBOutlet weak var resultadoTxtView: UITextView!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var btnGerar: UIButton!
     @IBOutlet weak var btnSalvar: UIButton!
@@ -33,7 +33,7 @@ class FaturamentoFaturamentoPorDataVC: UIViewController, SQLClientDelegate {
     @IBAction func btnDtDePressed(_ sender: Any) {
         datePicker.isHidden = false
         btnSalvar.isHidden = false
-        resultLbl.isHidden = true
+        resultadoTxtView.isHidden = true
         btnGerar.isHidden = true
         controleDeCampo = 1
     }
@@ -41,7 +41,7 @@ class FaturamentoFaturamentoPorDataVC: UIViewController, SQLClientDelegate {
     @IBAction func btnDtAtePressed(_ sender: Any) {
         datePicker.isHidden = false
         btnSalvar.isHidden = false
-        resultLbl.isHidden = true
+        resultadoTxtView.isHidden = true
         btnGerar.isHidden = true
         controleDeCampo = 2
     }
@@ -79,19 +79,18 @@ class FaturamentoFaturamentoPorDataVC: UIViewController, SQLClientDelegate {
             
             // EXECUTA METODO DE CONEXAO
             c.openConnection(query: q){
-                self.resultLbl.isHidden = false
+                self.resultadoTxtView.isHidden = false
                 
-                // IMPRIMRE RESULTADO
+                // IMPRIME RESULTADO
                 for table in c.result as! [[[String:AnyObject]]] {
                     for row in table {
                         for (columnName, value) in row {
-                           self.resultLbl.text = ("\(columnName) \(value)")
+                           self.resultadoTxtView.text = ("\(columnName)\(value)")
                         }
                     }
                 }
             }
         }
-        
     }
     
     // CAPTURA ERROS DO SQL
