@@ -80,7 +80,15 @@ class FaturamentoFaturamentoPorDataVC: UIViewController, SQLClientDelegate {
             // EXECUTA METODO DE CONEXAO
             c.openConnection(query: q){
                 self.resultLbl.isHidden = false
-                self.resultLbl.text = "\(c.result)"
+                
+                // IMPRIMRE RESULTADO
+                for table in c.result as! [[[String:AnyObject]]] {
+                    for row in table {
+                        for (columnName, value) in row {
+                           self.resultLbl.text = ("\(columnName) \(value)")
+                        }
+                    }
+                }
             }
         }
         

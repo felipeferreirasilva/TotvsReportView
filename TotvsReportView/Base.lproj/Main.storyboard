@@ -473,6 +473,12 @@
                                 <date key="date" timeIntervalSinceReferenceDate="522094955.57058102">
                                     <!--2017-07-18 18:22:35 +0000-->
                                 </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="507639600">
+                                    <!--2017-02-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="509972400">
+                                    <!--2017-02-28 11:00:00 +0000-->
+                                </date>
                                 <locale key="locale" localeIdentifier="pt_BR"/>
                             </datePicker>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HxD-OG-5zO">
@@ -503,7 +509,7 @@
                                     <action selector="btnSalvarPressed:" destination="QHx-Nk-1ia" eventType="touchUpInside" id="15G-8G-Ujm"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSa-Lj-WJ5" userLabel="Resultado">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSa-Lj-WJ5" userLabel="Resultado">
                                 <rect key="frame" x="0.0" y="423" width="320" height="85"/>
                                 <color key="backgroundColor" red="0.96855324509999996" green="0.96866911649999998" blue="0.96851390599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>

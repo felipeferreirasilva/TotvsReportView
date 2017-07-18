@@ -11,7 +11,7 @@ import Foundation
 class ReportsFaturamento {
     
     func FaturamentoPorData(de: String, ate: String) -> String {
-        let query = "SELECT STR(SUM(F2_VALMERC), 20, 2) AS VALOR FROM SF2010 WHERE D_E_L_E_T_='' AND F2_EMISSAO>='\(de)' AND F2_EMISSAO<='\(ate)'"
+        let query = "SELECT STR(SUM(F2_VALMERC), 15, 2) AS \"FATURADO:\" FROM SF2010 WHERE D_E_L_E_T_='' AND F2_EMISSAO>='\(de)' AND F2_EMISSAO<='\(ate)'"
         return query
     }
     
