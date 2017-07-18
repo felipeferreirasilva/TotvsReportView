@@ -11,7 +11,7 @@
         <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="TotvsReportView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="ReportView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -28,7 +28,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                         <state key="normal" title="FATURAMENTO">
-                                            <color key="titleColor" red="0.20077371599999999" green="0.58286780120000004" blue="0.75754421949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.0039215686269999999" green="0.59999999999999998" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="wsv-wH-hmS" kind="show" id="XRz-QB-csC"/>
@@ -90,8 +90,8 @@
                                             <segue destination="QHx-Nk-1ia" kind="show" id="KdR-hF-rtn"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Totvs Report View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tw-ML-aqn">
-                                        <rect key="frame" x="29" y="42" width="262" height="41"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tw-ML-aqn">
+                                        <rect key="frame" x="70.5" y="42" width="179" height="41"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -107,7 +107,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.20077371599999999" green="0.58286780120000004" blue="0.75754421949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0039215686274509803" green="0.59999999999999998" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="5tw-ML-aqn" firstAttribute="centerX" secondItem="Srt-hl-LyA" secondAttribute="centerX" id="86H-GE-9q6"/>
                                     <constraint firstItem="Kbl-1x-wCd" firstAttribute="leading" secondItem="Nga-kQ-4st" secondAttribute="trailing" constant="5" id="MG0-1X-rYR"/>
@@ -137,7 +137,7 @@
         <!--SettingsVC-->
         <scene sceneID="CD4-7o-Fox">
             <objects>
-                <viewController id="QHx-Nk-1ia" customClass="SettingsVC" customModule="TotvsReportView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QHx-Nk-1ia" customClass="SettingsVC" customModule="ReportView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VJs-hD-zrd"/>
                         <viewControllerLayoutGuide type="bottom" id="vVR-og-aXw"/>
@@ -150,7 +150,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLn-a7-ci5">
-                                        <rect key="frame" x="8" y="30" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="35" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="T1B-fc-vLI"/>
                                             <constraint firstAttribute="height" constant="50" id="qxf-Rb-g3r"/>
@@ -163,7 +163,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFIGURAÇÕES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvU-iU-5a7">
-                                        <rect key="frame" x="66" y="39" width="230" height="35"/>
+                                        <rect key="frame" x="66" y="44" width="230" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="Adb-lb-uFe"/>
                                             <constraint firstAttribute="width" constant="230" id="rS1-W9-C0Q"/>
@@ -182,15 +182,15 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.20077371599999999" green="0.58286780120000004" blue="0.75754421949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.59999999999999998" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="0OF-bT-usC"/>
                                     <constraint firstItem="nvU-iU-5a7" firstAttribute="leading" secondItem="PLn-a7-ci5" secondAttribute="trailing" constant="8" id="7ce-t8-viP"/>
-                                    <constraint firstItem="PLn-a7-ci5" firstAttribute="top" secondItem="pMP-GS-E0x" secondAttribute="top" constant="30" id="L2q-Sc-yJN"/>
-                                    <constraint firstItem="tUW-Ky-3Sa" firstAttribute="top" secondItem="PLn-a7-ci5" secondAttribute="bottom" id="SUE-MD-1Pw"/>
+                                    <constraint firstItem="PLn-a7-ci5" firstAttribute="top" secondItem="pMP-GS-E0x" secondAttribute="top" constant="35" id="L2q-Sc-yJN"/>
+                                    <constraint firstItem="tUW-Ky-3Sa" firstAttribute="top" secondItem="PLn-a7-ci5" secondAttribute="bottom" constant="-5" id="SUE-MD-1Pw"/>
                                     <constraint firstItem="tUW-Ky-3Sa" firstAttribute="leading" secondItem="pMP-GS-E0x" secondAttribute="leading" constant="8" id="XUu-uL-HCn"/>
                                     <constraint firstItem="PLn-a7-ci5" firstAttribute="leading" secondItem="pMP-GS-E0x" secondAttribute="leading" constant="8" id="g2N-ed-GXI"/>
-                                    <constraint firstItem="nvU-iU-5a7" firstAttribute="top" secondItem="pMP-GS-E0x" secondAttribute="top" constant="39" id="xZW-i5-Clh"/>
+                                    <constraint firstItem="nvU-iU-5a7" firstAttribute="top" secondItem="pMP-GS-E0x" secondAttribute="top" constant="44" id="xZW-i5-Clh"/>
                                     <constraint firstAttribute="trailing" secondItem="tUW-Ky-3Sa" secondAttribute="trailing" constant="8" id="y6b-QI-cw9"/>
                                 </constraints>
                             </view>
@@ -230,7 +230,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ef6-43-Nem">
                                                 <rect key="frame" x="0.0" y="0.0" width="137.5" height="69"/>
-                                                <color key="backgroundColor" red="0.20077371599999999" green="0.58286780120000004" blue="0.75754421949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0039215686269999999" green="0.59999999999999998" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                 <state key="normal" title="TESTAR">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -242,7 +242,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oiy-go-fYJ">
                                                 <rect key="frame" x="142.5" y="0.0" width="137.5" height="69"/>
-                                                <color key="backgroundColor" red="0.20077371599999999" green="0.58286780120000004" blue="0.75754421949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0039215686269999999" green="0.59999999999999998" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                 <state key="normal" title="SALVAR">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -282,7 +282,7 @@
         <!--FaturamentoVC-->
         <scene sceneID="yjI-iF-oIJ">
             <objects>
-                <viewController id="wsv-wH-hmS" customClass="FaturamentoVC" customModule="TotvsReportView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wsv-wH-hmS" customClass="FaturamentoVC" customModule="ReportView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tz7-xv-JXA"/>
                         <viewControllerLayoutGuide type="bottom" id="OiE-kK-h5j"/>
@@ -321,7 +321,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.20077371599999999" green="0.58286780120000004" blue="0.75754421949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.59999999999999998" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="tDz-Lc-jog" firstAttribute="leading" secondItem="OKP-4S-xul" secondAttribute="trailing" constant="8" id="O5I-M5-Lzs"/>
                                     <constraint firstItem="tDz-Lc-jog" firstAttribute="top" secondItem="7k2-G8-xr3" secondAttribute="top" constant="59" id="cUY-Js-Dco"/>
@@ -339,7 +339,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                         <state key="normal" title="FATURAMENTO POR DATA">
-                                            <color key="titleColor" red="0.20077371599999999" green="0.58286780120000004" blue="0.75754421949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.0039215686269999999" green="0.59999999999999998" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="N59-36-fAh" kind="show" id="dhS-4X-cpt"/>
@@ -374,7 +374,7 @@
         <!--Faturamento Faturamento Por DataVC-->
         <scene sceneID="vd0-mw-FCK">
             <objects>
-                <viewController id="N59-36-fAh" customClass="FaturamentoFaturamentoPorDataVC" customModule="TotvsReportView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="N59-36-fAh" customClass="FaturamentoFaturamentoPorDataVC" customModule="ReportView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fwS-SF-KtM"/>
                         <viewControllerLayoutGuide type="bottom" id="Ea0-wH-ELY"/>
@@ -421,7 +421,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.20077371599999999" green="0.58286780120000004" blue="0.75754421949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.59999999999999998" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="jDh-Uv-1RE" secondAttribute="trailing" constant="8" id="7x5-tw-vUK"/>
                                     <constraint firstAttribute="trailing" secondItem="0Xp-pI-gIH" secondAttribute="trailing" constant="21" id="B9W-NG-JG7"/>
@@ -473,14 +473,11 @@
                                 <date key="date" timeIntervalSinceReferenceDate="522094955.57058102">
                                     <!--2017-07-18 18:22:35 +0000-->
                                 </date>
-                                <date key="minimumDate" timeIntervalSinceReferenceDate="507639600">
-                                    <!--2017-02-01 11:00:00 +0000-->
-                                </date>
                                 <locale key="locale" localeIdentifier="pt_BR"/>
                             </datePicker>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HxD-OG-5zO">
                                 <rect key="frame" x="0.0" y="396" width="320" height="50"/>
-                                <color key="backgroundColor" red="0.20077371599999999" green="0.58286780120000004" blue="0.75754421949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.59999999999999998" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XCj-gT-fze"/>
                                 </constraints>
@@ -493,7 +490,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNi-Kl-c0A">
                                 <rect key="frame" x="0.0" y="508" width="320" height="60"/>
-                                <color key="backgroundColor" red="0.20077371599999999" green="0.58286780120000004" blue="0.75754421949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.59999999999999998" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="5Mp-9t-Y2W"/>
                                 </constraints>

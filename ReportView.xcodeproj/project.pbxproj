@@ -51,7 +51,7 @@
 		389AA2081F1A954900E26618 /* FaturamentoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaturamentoVC.swift; sourceTree = "<group>"; };
 		389AA20A1F1A997C00E26618 /* FaturamentoFaturamentoPorDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaturamentoFaturamentoPorDataVC.swift; sourceTree = "<group>"; };
 		389AA20C1F1A9C1A00E26618 /* EscondeTeclado.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EscondeTeclado.swift; sourceTree = "<group>"; };
-		38C7EEC11F1976D600F4B39C /* TotvsReportView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TotvsReportView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38C7EEC11F1976D600F4B39C /* ReportView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReportView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38C7EEC41F1976D600F4B39C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38C7EEC61F1976D600F4B39C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		38C7EEC91F1976D600F4B39C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 		38C7EEB81F1976D600F4B39C = {
 			isa = PBXGroup;
 			children = (
-				38C7EEC31F1976D600F4B39C /* TotvsReportView */,
+				38C7EEC31F1976D600F4B39C /* ReportView */,
 				38C7EEC21F1976D600F4B39C /* Products */,
 				380201231F1992FF00A993FC /* Frameworks */,
 			);
@@ -157,12 +157,12 @@
 		38C7EEC21F1976D600F4B39C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				38C7EEC11F1976D600F4B39C /* TotvsReportView.app */,
+				38C7EEC11F1976D600F4B39C /* ReportView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		38C7EEC31F1976D600F4B39C /* TotvsReportView */ = {
+		38C7EEC31F1976D600F4B39C /* ReportView */ = {
 			isa = PBXGroup;
 			children = (
 				384987151F1998A700EDF078 /* Model */,
@@ -175,15 +175,16 @@
 				38C7EECD1F1976D600F4B39C /* LaunchScreen.storyboard */,
 				38C7EED01F1976D600F4B39C /* Info.plist */,
 			);
+			name = ReportView;
 			path = TotvsReportView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		38C7EEC01F1976D600F4B39C /* TotvsReportView */ = {
+		38C7EEC01F1976D600F4B39C /* ReportView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38C7EED31F1976D600F4B39C /* Build configuration list for PBXNativeTarget "TotvsReportView" */;
+			buildConfigurationList = 38C7EED31F1976D600F4B39C /* Build configuration list for PBXNativeTarget "ReportView" */;
 			buildPhases = (
 				38C7EEBD1F1976D600F4B39C /* Sources */,
 				38C7EEBE1F1976D600F4B39C /* Frameworks */,
@@ -193,9 +194,9 @@
 			);
 			dependencies = (
 			);
-			name = TotvsReportView;
+			name = ReportView;
 			productName = TotvsReportView;
-			productReference = 38C7EEC11F1976D600F4B39C /* TotvsReportView.app */;
+			productReference = 38C7EEC11F1976D600F4B39C /* ReportView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +217,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 38C7EEBC1F1976D600F4B39C /* Build configuration list for PBXProject "TotvsReportView" */;
+			buildConfigurationList = 38C7EEBC1F1976D600F4B39C /* Build configuration list for PBXProject "ReportView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -229,7 +230,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				38C7EEC01F1976D600F4B39C /* TotvsReportView */,
+				38C7EEC01F1976D600F4B39C /* ReportView */,
 			);
 		};
 /* End PBXProject section */
@@ -401,7 +402,7 @@
 					"$(PROJECT_DIR)/TotvsReportView",
 				);
 				MACH_O_TYPE = mh_execute;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.felipeferreirasilva.TotvsReportView;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.felipeferreirasilva.ReportView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TotvsReportView/MSSQLSwift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -426,7 +427,7 @@
 					"$(PROJECT_DIR)/TotvsReportView",
 				);
 				MACH_O_TYPE = mh_execute;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.felipeferreirasilva.TotvsReportView;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.felipeferreirasilva.ReportView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TotvsReportView/MSSQLSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -436,7 +437,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38C7EEBC1F1976D600F4B39C /* Build configuration list for PBXProject "TotvsReportView" */ = {
+		38C7EEBC1F1976D600F4B39C /* Build configuration list for PBXProject "ReportView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38C7EED11F1976D600F4B39C /* Debug */,
@@ -445,7 +446,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38C7EED31F1976D600F4B39C /* Build configuration list for PBXNativeTarget "TotvsReportView" */ = {
+		38C7EED31F1976D600F4B39C /* Build configuration list for PBXNativeTarget "ReportView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38C7EED41F1976D600F4B39C /* Debug */,

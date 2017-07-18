@@ -85,7 +85,7 @@ class FaturamentoFaturamentoPorDataVC: UIViewController, SQLClientDelegate {
                 for table in c.result as! [[[String:AnyObject]]] {
                     for row in table {
                         for (columnName, value) in row {
-                           self.resultadoTxtView.text = ("\(columnName)\(value)")
+                           self.resultadoTxtView.text = ("\(columnName) \(value)")
                         }
                     }
                 }
