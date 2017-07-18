@@ -387,7 +387,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5j-ar-gqD">
-                                        <rect key="frame" x="8" y="30" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="35" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="813-Nc-kgh"/>
                                             <constraint firstAttribute="height" constant="50" id="8VO-rq-pz8"/>
@@ -402,7 +402,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FATURAMENTO POR DATA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0Xp-pI-gIH">
-                                        <rect key="frame" x="58" y="38" width="241" height="34"/>
+                                        <rect key="frame" x="58" y="43" width="241" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="Pva-oI-PUI"/>
                                         </constraints>
@@ -425,13 +425,13 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="jDh-Uv-1RE" secondAttribute="trailing" constant="8" id="7x5-tw-vUK"/>
                                     <constraint firstAttribute="trailing" secondItem="0Xp-pI-gIH" secondAttribute="trailing" constant="21" id="B9W-NG-JG7"/>
-                                    <constraint firstItem="jDh-Uv-1RE" firstAttribute="top" secondItem="K5j-ar-gqD" secondAttribute="bottom" constant="3" id="NGH-p8-jwq"/>
+                                    <constraint firstItem="jDh-Uv-1RE" firstAttribute="top" secondItem="K5j-ar-gqD" secondAttribute="bottom" constant="-2" id="NGH-p8-jwq"/>
                                     <constraint firstItem="jDh-Uv-1RE" firstAttribute="leading" secondItem="N4w-Rj-7Ah" secondAttribute="leading" constant="8" id="YEk-dm-ivy"/>
                                     <constraint firstAttribute="height" constant="128" id="bhZ-6K-AYV"/>
                                     <constraint firstItem="K5j-ar-gqD" firstAttribute="leading" secondItem="N4w-Rj-7Ah" secondAttribute="leading" constant="8" id="dX2-Wx-ay2"/>
                                     <constraint firstItem="0Xp-pI-gIH" firstAttribute="leading" secondItem="K5j-ar-gqD" secondAttribute="trailing" id="hDq-Mn-h0E"/>
-                                    <constraint firstItem="K5j-ar-gqD" firstAttribute="top" secondItem="N4w-Rj-7Ah" secondAttribute="top" constant="30" id="hge-tK-Wng"/>
-                                    <constraint firstItem="0Xp-pI-gIH" firstAttribute="top" secondItem="N4w-Rj-7Ah" secondAttribute="top" constant="38" id="lPC-pn-YqZ"/>
+                                    <constraint firstItem="K5j-ar-gqD" firstAttribute="top" secondItem="N4w-Rj-7Ah" secondAttribute="top" constant="35" id="hge-tK-Wng"/>
+                                    <constraint firstItem="0Xp-pI-gIH" firstAttribute="top" secondItem="N4w-Rj-7Ah" secondAttribute="top" constant="43" id="lPC-pn-YqZ"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="65l-nk-R9e">
