@@ -137,6 +137,14 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		3891DCF11F1E87FB00B38A4E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3802010F1F19928D00A993FC /* SQLConnect */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		38C7EEB81F1976D600F4B39C = {
 			isa = PBXGroup;
 			children = (
@@ -157,10 +165,10 @@
 		38C7EEC31F1976D600F4B39C /* TotvsReportView */ = {
 			isa = PBXGroup;
 			children = (
-				3802010F1F19928D00A993FC /* SQLConnect */,
 				384987151F1998A700EDF078 /* Model */,
 				384987141F1998A200EDF078 /* View */,
 				384987131F19989700EDF078 /* Controller */,
+				3891DCF11F1E87FB00B38A4E /* Util */,
 				38C7EEC41F1976D600F4B39C /* AppDelegate.swift */,
 				38C7EEC81F1976D600F4B39C /* Main.storyboard */,
 				38C7EECB1F1976D600F4B39C /* Assets.xcassets */,
