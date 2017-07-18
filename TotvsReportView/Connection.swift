@@ -12,23 +12,22 @@ import Foundation
 import UIKit
 
 class Connection:  SettingsVC, SQLClientDelegate {
-    private var _status: Bool = false
+    private var _result: [Any] = []
     private var IP = UserDefaults.standard.string(forKey: "ip")!
     private var USER = UserDefaults.standard.string(forKey: "user")!
     private var PASS = UserDefaults.standard.string(forKey: "pass")!
     private var DB = UserDefaults.standard.string(forKey: "db")!
     
-    var status: Bool{
+    var result: [Any]{
         get{
-            return _status
+            return _result
         }set{
-            _status = newValue
+            _result = newValue
         }
     }
     
     func error(_ error: String!, code: Int32, severity: Int32) {
         print("\(error!) \(code) \(severity)")
-        self._status = false
     }
 
     func openConnection(query: String, completed: @escaping DownloadComplete) {
@@ -37,14 +36,7 @@ class Connection:  SettingsVC, SQLClientDelegate {
         client.connect(IP, username: USER, password: PASS, database: DB) { success in
             if (success) {
                 client.execute(query, completion: { (_ results: ([Any]?)) in
-                self._status = success
-                for table in results as! [[[String:AnyObject]]] {
-                    for row in table {
-                        for (columnName, value) in row {
-                            print("\(columnName) = \(value)")
-                        }
-                    }
-                }
+                self._result = results!
                 client.disconnect()
                 completed()
                 })

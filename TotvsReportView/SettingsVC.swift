@@ -43,8 +43,9 @@ class SettingsVC: UIViewController {
         
         let c = Connection()
         
+        
         c.openConnection(query: q){
-            print(c.status)
+            print(c.result)
         }
         
     }
