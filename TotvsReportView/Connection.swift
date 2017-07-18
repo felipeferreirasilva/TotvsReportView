@@ -9,14 +9,22 @@
 //192.168.25.175
 
 import Foundation
-import UIKit
 
-class Connection:  SettingsVC, SQLClientDelegate {
+class Connection {
+    private var _client = SQLClient.sharedInstance()!
     private var _result: [Any] = []
     private var IP = UserDefaults.standard.string(forKey: "ip")!
     private var USER = UserDefaults.standard.string(forKey: "user")!
     private var PASS = UserDefaults.standard.string(forKey: "pass")!
     private var DB = UserDefaults.standard.string(forKey: "db")!
+    
+    var client: SQLClient{
+        get{
+            return _client
+        }set{
+            _client = newValue
+        }
+    }
     
     var result: [Any]{
         get{
@@ -26,18 +34,12 @@ class Connection:  SettingsVC, SQLClientDelegate {
         }
     }
     
-    func error(_ error: String!, code: Int32, severity: Int32) {
-        print("\(error!) \(code) \(severity)")
-    }
-
     func openConnection(query: String, completed: @escaping DownloadComplete) {
-        let client = SQLClient.sharedInstance()!
-        client.delegate = self
-        client.connect(IP, username: USER, password: PASS, database: DB) { success in
+        self._client.connect(IP, username: USER, password: PASS, database: DB) { success in
             if (success) {
-                client.execute(query, completion: { (_ results: ([Any]?)) in
+                self.client.execute(query, completion: { (_ results: ([Any]?)) in
                 self._result = results!
-                client.disconnect()
+                self.client.disconnect()
                 completed()
                 })
             }

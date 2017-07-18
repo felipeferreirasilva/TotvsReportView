@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsVC: UIViewController {
+class SettingsVC: UIViewController, SQLClientDelegate {
     @IBOutlet weak var ipTxtField: UITextField!
     @IBOutlet weak var userTxtField: UITextField!
     @IBOutlet weak var passTxtField: UITextField!
@@ -16,7 +16,10 @@ class SettingsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // CHAMA METODO PARA OCULTAR TECLADO AO TOCAR FORA DA TELA
         self.hideKeyboardWhenTappedAround()
+        
         ipTxtField.text = UserDefaults.standard.string(forKey: "ip")
         userTxtField.text = UserDefaults.standard.string(forKey: "user")
         passTxtField.text = UserDefaults.standard.string(forKey: "pass")
@@ -35,19 +38,30 @@ class SettingsVC: UIViewController {
     }
     
     @IBAction func testarBtnPressed(_ sender: Any) {
+        // CRIA RELATORIO DE TESTE
         //let r = ReportsComercial()
         //let q = r.ClientePorCodigo(codigo: "000746")
         
+        // CRIA RELATORIO DE TESTE
         let r = ReportsFaturamento()
         let q = r.FaturamentoPorData(de: "20170201", ate: "20170228")
-        
+       
+        // ABRE NOVA CONEXAO
         let c = Connection()
         
+        // SETA DELEGATE
+        c.client.delegate = self
         
+        // EXECUTA METODO DE CONEXAO
         c.openConnection(query: q){
             print(c.result)
         }
         
+    }
+    
+    // CAPTURA ERROS DO SQL
+    func error(_ error: String!, code: Int32, severity: Int32) {
+        print("\(error!) \(code) \(severity) ok")
     }
 
 }

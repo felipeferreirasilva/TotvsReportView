@@ -17,6 +17,5 @@ class FaturamentoVC: UIViewController {
     @IBAction func voltarBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
 
 }
