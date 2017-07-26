@@ -44,7 +44,6 @@
 		3802011E1F1992AC00A993FC /* MSSQLSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MSSQLSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		380201211F1992C900A993FC /* MSSQLSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MSSQLSwift.xcdatamodel; sourceTree = "<group>"; };
 		380201241F1992FF00A993FC /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
-		380545CB1F1A9DF800F13AEB /* xcuserdata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = xcuserdata; path = TotvsReportView.xcodeproj/xcuserdata; sourceTree = "<group>"; };
 		384987161F19998400EDF078 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		384987181F199E7F00EDF078 /* ReportsFaturamento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsFaturamento.swift; sourceTree = "<group>"; };
 		3849871A1F19A55700EDF078 /* ReportsComercial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsComercial.swift; sourceTree = "<group>"; };
@@ -101,7 +100,6 @@
 		380201231F1992FF00A993FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				380545CB1F1A9DF800F13AEB /* xcuserdata */,
 				380201241F1992FF00A993FC /* libiconv.tbd */,
 			);
 			name = Frameworks;
@@ -211,7 +209,7 @@
 				TargetAttributes = {
 					38C7EEC01F1976D600F4B39C = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 97ZVCXEP4L;
+						DevelopmentTeam = 3SEXW9C37E;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -392,7 +390,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 97ZVCXEP4L;
+				DEVELOPMENT_TEAM = 3SEXW9C37E;
 				ENABLE_BITCODE = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				INFOPLIST_FILE = TotvsReportView/Info.plist;
@@ -403,7 +401,7 @@
 					"$(PROJECT_DIR)/TotvsReportView",
 				);
 				MACH_O_TYPE = mh_execute;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.felipeferreirasilva.ReportView;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ditango.ErpView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TotvsReportView/MSSQLSwift-Bridging-Header.h";
@@ -420,7 +418,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 97ZVCXEP4L;
+				DEVELOPMENT_TEAM = 3SEXW9C37E;
 				ENABLE_BITCODE = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				INFOPLIST_FILE = TotvsReportView/Info.plist;
@@ -431,7 +429,7 @@
 					"$(PROJECT_DIR)/TotvsReportView",
 				);
 				MACH_O_TYPE = mh_execute;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.felipeferreirasilva.ReportView;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ditango.ErpView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TotvsReportView/MSSQLSwift-Bridging-Header.h";
