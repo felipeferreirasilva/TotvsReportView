@@ -11,7 +11,7 @@
         <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="ReportView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="TotvsReportView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -91,7 +91,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERP View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tw-ML-aqn">
-                                        <rect key="frame" x="91" y="42" width="138" height="41"/>
+                                        <rect key="frame" x="91.5" y="42" width="137.5" height="41"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -137,7 +137,7 @@
         <!--SettingsVC-->
         <scene sceneID="CD4-7o-Fox">
             <objects>
-                <viewController id="QHx-Nk-1ia" customClass="SettingsVC" customModule="ReportView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QHx-Nk-1ia" customClass="SettingsVC" customModule="TotvsReportView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VJs-hD-zrd"/>
                         <viewControllerLayoutGuide type="bottom" id="vVR-og-aXw"/>
@@ -206,35 +206,35 @@
                                         </state>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   IP DO BANCO" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="adp-lN-BZm">
-                                        <rect key="frame" x="0.0" y="58" width="280" height="53"/>
+                                        <rect key="frame" x="0.0" y="58" width="280" height="52.5"/>
                                         <color key="backgroundColor" red="0.96855324509999996" green="0.96866911649999998" blue="0.96851390599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   PORTA" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kP4-Xt-0nw">
-                                        <rect key="frame" x="0.0" y="116" width="280" height="53"/>
+                                        <rect key="frame" x="0.0" y="115.5" width="280" height="53"/>
                                         <color key="backgroundColor" red="0.96855324509999996" green="0.96866911649999998" blue="0.96851390599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   USUARIO" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ff-fG-rat">
-                                        <rect key="frame" x="0.0" y="174" width="280" height="52"/>
+                                        <rect key="frame" x="0.0" y="173.5" width="280" height="53"/>
                                         <color key="backgroundColor" red="0.96855324509999996" green="0.96866911649999998" blue="0.96851390599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   SENHA" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="no2-nZ-oF8">
-                                        <rect key="frame" x="0.0" y="231" width="280" height="53"/>
+                                        <rect key="frame" x="0.0" y="231.5" width="280" height="53"/>
                                         <color key="backgroundColor" red="0.96855324509999996" green="0.96866911649999998" blue="0.96851390599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   NOME DO BANCO" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iWP-YX-iPs">
-                                        <rect key="frame" x="0.0" y="289" width="280" height="53"/>
+                                        <rect key="frame" x="0.0" y="289.5" width="280" height="52.5"/>
                                         <color key="backgroundColor" red="0.96855324509999996" green="0.96866911649999998" blue="0.96851390599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
@@ -244,7 +244,7 @@
                                         <rect key="frame" x="0.0" y="347" width="280" height="53"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ef6-43-Nem">
-                                                <rect key="frame" x="0.0" y="0.0" width="138" height="53"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="137.5" height="53"/>
                                                 <color key="backgroundColor" red="0.0039215686269999999" green="0.59999999999999998" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                 <state key="normal" title="TESTAR">
@@ -256,7 +256,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oiy-go-fYJ">
-                                                <rect key="frame" x="143" y="0.0" width="137" height="53"/>
+                                                <rect key="frame" x="142.5" y="0.0" width="137.5" height="53"/>
                                                 <color key="backgroundColor" red="0.0039215686269999999" green="0.59999999999999998" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                 <state key="normal" title="SALVAR">
@@ -287,6 +287,8 @@
                         <outlet property="infoTxtView" destination="tUW-Ky-3Sa" id="dmy-dO-1Wv"/>
                         <outlet property="ipTxtField" destination="adp-lN-BZm" id="jeD-Nh-tJB"/>
                         <outlet property="passTxtField" destination="no2-nZ-oF8" id="Jxc-jd-ean"/>
+                        <outlet property="portaTxtField" destination="kP4-Xt-0nw" id="8Ne-P7-w3M"/>
+                        <outlet property="tipoDbTxtField" destination="Lm4-CF-EqC" id="cLq-nO-RVW"/>
                         <outlet property="userTxtField" destination="2Ff-fG-rat" id="Gqh-XA-xed"/>
                     </connections>
                 </viewController>
@@ -297,7 +299,7 @@
         <!--FaturamentoVC-->
         <scene sceneID="yjI-iF-oIJ">
             <objects>
-                <viewController id="wsv-wH-hmS" customClass="FaturamentoVC" customModule="ReportView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wsv-wH-hmS" customClass="FaturamentoVC" customModule="TotvsReportView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tz7-xv-JXA"/>
                         <viewControllerLayoutGuide type="bottom" id="OiE-kK-h5j"/>
@@ -389,7 +391,7 @@
         <!--Faturamento Faturamento Por DataVC-->
         <scene sceneID="vd0-mw-FCK">
             <objects>
-                <viewController id="N59-36-fAh" customClass="FaturamentoFaturamentoPorDataVC" customModule="ReportView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="N59-36-fAh" customClass="FaturamentoFaturamentoPorDataVC" customModule="TotvsReportView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fwS-SF-KtM"/>
                         <viewControllerLayoutGuide type="bottom" id="Ea0-wH-ELY"/>
@@ -453,7 +455,7 @@
                                 <rect key="frame" x="5" y="148" width="310" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCR-T2-iTT">
-                                        <rect key="frame" x="0.0" y="0.0" width="153" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="152.5" height="50"/>
                                         <color key="backgroundColor" red="0.96855324509999996" green="0.96866911649999998" blue="0.96851390599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="jUg-aS-27j"/>
@@ -466,7 +468,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpb-Zu-TO8">
-                                        <rect key="frame" x="158" y="0.0" width="152" height="50"/>
+                                        <rect key="frame" x="157.5" y="0.0" width="152.5" height="50"/>
                                         <color key="backgroundColor" red="0.96855324509999996" green="0.96866911649999998" blue="0.96851390599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="2zj-9V-tpY"/>

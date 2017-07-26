@@ -72,7 +72,7 @@ class FaturamentoFaturamentoPorDataVC: UIViewController, SQLClientDelegate {
             let q = r.FaturamentoPorData(de: dtDe, ate: dtAte)
             
             // ABRE NOVA CONEXAO
-            let c = Connection()
+            let c = SQLConnection()
             
             // SETA DELEGATE
             c.client.delegate = self

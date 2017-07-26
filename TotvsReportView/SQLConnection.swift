@@ -10,11 +10,11 @@
 
 import Foundation
 
-class Connection {
+class SQLConnection {
     private var _client = SQLClient.sharedInstance()!
     private var _result: [Any] = []
     private var IP = UserDefaults.standard.string(forKey: "ip")!
-    private var PORT = 1433
+    private var PORT = UserDefaults.standard.string(forKey: "porta")!
     private var USER = UserDefaults.standard.string(forKey: "user")!
     private var PASS = UserDefaults.standard.string(forKey: "pass")!
     private var DB = UserDefaults.standard.string(forKey: "db")!

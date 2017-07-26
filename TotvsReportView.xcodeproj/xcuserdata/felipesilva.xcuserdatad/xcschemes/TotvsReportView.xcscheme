@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "38C7EEC01F1976D600F4B39C"
-               BuildableName = "ReportView.app"
-               BlueprintName = "ReportView"
-               ReferencedContainer = "container:ReportView.xcodeproj">
+               BuildableName = "TotvsReportView.app"
+               BlueprintName = "TotvsReportView"
+               ReferencedContainer = "container:TotvsReportView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "38C7EEC01F1976D600F4B39C"
-            BuildableName = "ReportView.app"
-            BlueprintName = "ReportView"
-            ReferencedContainer = "container:ReportView.xcodeproj">
+            BuildableName = "TotvsReportView.app"
+            BlueprintName = "TotvsReportView"
+            ReferencedContainer = "container:TotvsReportView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "38C7EEC01F1976D600F4B39C"
-            BuildableName = "ReportView.app"
-            BlueprintName = "ReportView"
-            ReferencedContainer = "container:ReportView.xcodeproj">
+            BuildableName = "TotvsReportView.app"
+            BlueprintName = "TotvsReportView"
+            ReferencedContainer = "container:TotvsReportView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "38C7EEC01F1976D600F4B39C"
-            BuildableName = "ReportView.app"
-            BlueprintName = "ReportView"
-            ReferencedContainer = "container:ReportView.xcodeproj">
+            BuildableName = "TotvsReportView.app"
+            BlueprintName = "TotvsReportView"
+            ReferencedContainer = "container:TotvsReportView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

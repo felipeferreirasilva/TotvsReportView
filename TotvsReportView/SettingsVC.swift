@@ -9,7 +9,9 @@
 import UIKit
 
 class SettingsVC: UIViewController, SQLClientDelegate {
+    @IBOutlet weak var tipoDbTxtField: UIButton!
     @IBOutlet weak var ipTxtField: UITextField!
+    @IBOutlet weak var portaTxtField: UITextField!
     @IBOutlet weak var userTxtField: UITextField!
     @IBOutlet weak var passTxtField: UITextField!
     @IBOutlet weak var dbTxtField: UITextField!
@@ -22,6 +24,7 @@ class SettingsVC: UIViewController, SQLClientDelegate {
         self.hideKeyboardWhenTappedAround()
         
         ipTxtField.text = UserDefaults.standard.string(forKey: "ip")
+        portaTxtField.text = UserDefaults.standard.string(forKey: "porta")
         userTxtField.text = UserDefaults.standard.string(forKey: "user")
         passTxtField.text = UserDefaults.standard.string(forKey: "pass")
         dbTxtField.text = UserDefaults.standard.string(forKey: "db")
@@ -33,9 +36,12 @@ class SettingsVC: UIViewController, SQLClientDelegate {
     
     @IBAction func btnSalvarPressed(_ sender: Any) {
         UserDefaults.standard.set(ipTxtField.text, forKey: "ip")
+        UserDefaults.standard.set(portaTxtField.text, forKey: "porta")
         UserDefaults.standard.set(userTxtField.text, forKey: "user")
         UserDefaults.standard.set(passTxtField.text, forKey: "pass")
         UserDefaults.standard.set(dbTxtField.text, forKey: "db")
+        
+        infoTxtView.text = "Configuração Salva"
     }
     
     @IBAction func testarBtnPressed(_ sender: Any) {
@@ -48,7 +54,7 @@ class SettingsVC: UIViewController, SQLClientDelegate {
         let q = r.FaturamentoPorData(de: "20170201", ate: "20170228")
        
         // ABRE NOVA CONEXAO
-        let c = Connection()
+        let c = SQLConnection()
         
         // SETA DELEGATE
         c.client.delegate = self

@@ -1,0 +1,58 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "712AF5BEACEDBBA25DF36265CE49645BDE14A929",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A1425CC37302E6F8C8BD550497B9059B098D1BAF" : 9223372036854775807,
+    "3D2B8B3C65A5DCCE6F839227AA4595360205FD35" : 9223372036854775807,
+    "52AFDBC9624F22D94526E36BBEE271C6D7FC65D3" : 9223372036854775807,
+    "EE0211841CDBC942EFB5905580DF4AA57B5992F6" : 9223372036854775807,
+    "D81F653129D614C7585FD79F985702AFD09DBE56" : 9223372036854775807,
+    "712AF5BEACEDBBA25DF36265CE49645BDE14A929" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FA3C3BB9-548F-4EC5-A097-B0431731F10B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A1425CC37302E6F8C8BD550497B9059B098D1BAF" : "TotvsReportView\/.build\/checkouts\/debugging.git-4365319567167379684\/",
+    "3D2B8B3C65A5DCCE6F839227AA4595360205FD35" : "TotvsReportView\/.build\/checkouts\/bits.git-9196587591774126515\/",
+    "52AFDBC9624F22D94526E36BBEE271C6D7FC65D3" : "TotvsReportView\/.build\/checkouts\/core.git-9210800844849382486\/",
+    "EE0211841CDBC942EFB5905580DF4AA57B5992F6" : "TotvsReportView\/.build\/checkouts\/node.git-9175390252000121167\/",
+    "D81F653129D614C7585FD79F985702AFD09DBE56" : "TotvsReportView\/.build\/checkouts\/postgresql.git-5650722971996441103\/",
+    "712AF5BEACEDBBA25DF36265CE49645BDE14A929" : "TotvsReportView\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ReportView",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ReportView.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/felipesilva\/Documents\/GitHub\/TotvsReportView\/.build\/repositories\/bits.git-9196587591774126515",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3D2B8B3C65A5DCCE6F839227AA4595360205FD35"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/felipesilva\/Documents\/GitHub\/TotvsReportView\/.build\/repositories\/core.git-9210800844849382486",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "52AFDBC9624F22D94526E36BBEE271C6D7FC65D3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/felipeferreirasilva\/TotvsReportView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "712AF5BEACEDBBA25DF36265CE49645BDE14A929"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/felipesilva\/Documents\/GitHub\/TotvsReportView\/.build\/repositories\/debugging.git-4365319567167379684",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A1425CC37302E6F8C8BD550497B9059B098D1BAF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/felipesilva\/Documents\/GitHub\/TotvsReportView\/.build\/repositories\/postgresql.git-5650722971996441103",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D81F653129D614C7585FD79F985702AFD09DBE56"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/felipesilva\/Documents\/GitHub\/TotvsReportView\/.build\/repositories\/node.git-9175390252000121167",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EE0211841CDBC942EFB5905580DF4AA57B5992F6"
+    }
+  ]
+}
