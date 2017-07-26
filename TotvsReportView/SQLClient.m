@@ -390,7 +390,7 @@ int err_handler(DBPROCESS* dbproc, int severity, int dberr, int oserr, char* dbe
 - (void)error:(NSString*)error code:(int)code severity:(int)severity
 {
 	if (!self.delegate || ![self.delegate conformsToProtocol:@protocol(SQLClientDelegate)])
-		[NSException raise:SQLClientDelegateError format:nil];
+		[NSException raise:SQLClientDelegateError format:@""];
 	
 	//Invoke delegate on callback queue
 	[self.callbackQueue addOperationWithBlock:^{

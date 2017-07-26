@@ -14,6 +14,7 @@ class Connection {
     private var _client = SQLClient.sharedInstance()!
     private var _result: [Any] = []
     private var IP = UserDefaults.standard.string(forKey: "ip")!
+    private var PORT = 1433
     private var USER = UserDefaults.standard.string(forKey: "user")!
     private var PASS = UserDefaults.standard.string(forKey: "pass")!
     private var DB = UserDefaults.standard.string(forKey: "db")!
@@ -35,7 +36,7 @@ class Connection {
     }
     
     func openConnection(query: String, completed: @escaping DownloadComplete) {
-        self._client.connect(IP, username: USER, password: PASS, database: DB) { success in
+        self._client.connect("\(IP):\(PORT)", username: USER, password: PASS, database: DB) { success in
             if (success) {
                 self.client.execute(query, completion: { (_ results: ([Any]?)) in
                 self._result = results!

@@ -150,7 +150,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLn-a7-ci5">
-                                        <rect key="frame" x="8" y="35" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="35" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="T1B-fc-vLI"/>
                                             <constraint firstAttribute="height" constant="50" id="qxf-Rb-g3r"/>
@@ -163,7 +163,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFIGURAÇÕES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvU-iU-5a7">
-                                        <rect key="frame" x="66" y="44" width="230" height="35"/>
+                                        <rect key="frame" x="58" y="44" width="230" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="Adb-lb-uFe"/>
                                             <constraint firstAttribute="width" constant="230" id="rS1-W9-C0Q"/>
@@ -189,47 +189,62 @@
                                     <constraint firstItem="PLn-a7-ci5" firstAttribute="top" secondItem="pMP-GS-E0x" secondAttribute="top" constant="35" id="L2q-Sc-yJN"/>
                                     <constraint firstItem="tUW-Ky-3Sa" firstAttribute="top" secondItem="PLn-a7-ci5" secondAttribute="bottom" constant="-5" id="SUE-MD-1Pw"/>
                                     <constraint firstItem="tUW-Ky-3Sa" firstAttribute="leading" secondItem="pMP-GS-E0x" secondAttribute="leading" constant="8" id="XUu-uL-HCn"/>
-                                    <constraint firstItem="PLn-a7-ci5" firstAttribute="leading" secondItem="pMP-GS-E0x" secondAttribute="leading" constant="8" id="g2N-ed-GXI"/>
+                                    <constraint firstItem="PLn-a7-ci5" firstAttribute="leading" secondItem="pMP-GS-E0x" secondAttribute="leading" id="g2N-ed-GXI"/>
                                     <constraint firstItem="nvU-iU-5a7" firstAttribute="top" secondItem="pMP-GS-E0x" secondAttribute="top" constant="44" id="xZW-i5-Clh"/>
                                     <constraint firstAttribute="trailing" secondItem="tUW-Ky-3Sa" secondAttribute="trailing" constant="8" id="y6b-QI-cw9"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Zzq-7X-YFA">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Zzq-7X-YFA">
                                 <rect key="frame" x="20" y="148" width="280" height="400"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   IP DO SERVIDOR" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K7I-d1-5zP">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="69"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lm4-CF-EqC">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="53"/>
                                         <color key="backgroundColor" red="0.96855324506759644" green="0.96866911649703979" blue="0.96851390600204468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="BANCO DE DADOS">
+                                            <color key="titleColor" red="0.71027130776137237" green="0.71187200211752732" blue="0.73629838197969544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   IP DO BANCO" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="adp-lN-BZm">
+                                        <rect key="frame" x="0.0" y="58" width="280" height="52.5"/>
+                                        <color key="backgroundColor" red="0.96855324509999996" green="0.96866911649999998" blue="0.96851390599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   PORTA" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kP4-Xt-0nw">
+                                        <rect key="frame" x="0.0" y="115.5" width="280" height="53"/>
+                                        <color key="backgroundColor" red="0.96855324509999996" green="0.96866911649999998" blue="0.96851390599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   USUARIO" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ff-fG-rat">
-                                        <rect key="frame" x="0.0" y="83" width="280" height="68.5"/>
+                                        <rect key="frame" x="0.0" y="173.5" width="280" height="53"/>
                                         <color key="backgroundColor" red="0.96855324509999996" green="0.96866911649999998" blue="0.96851390599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   SENHA" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="no2-nZ-oF8">
-                                        <rect key="frame" x="0.0" y="165.5" width="280" height="69"/>
+                                        <rect key="frame" x="0.0" y="231.5" width="280" height="53"/>
                                         <color key="backgroundColor" red="0.96855324509999996" green="0.96866911649999998" blue="0.96851390599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   BANCO DE DADOS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iWP-YX-iPs">
-                                        <rect key="frame" x="0.0" y="248.5" width="280" height="68.5"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   NOME DO BANCO" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iWP-YX-iPs">
+                                        <rect key="frame" x="0.0" y="289.5" width="280" height="52.5"/>
                                         <color key="backgroundColor" red="0.96855324509999996" green="0.96866911649999998" blue="0.96851390599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Whl-du-FcP">
-                                        <rect key="frame" x="0.0" y="331" width="280" height="69"/>
+                                        <rect key="frame" x="0.0" y="347" width="280" height="53"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ef6-43-Nem">
-                                                <rect key="frame" x="0.0" y="0.0" width="137.5" height="69"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="137.5" height="53"/>
                                                 <color key="backgroundColor" red="0.0039215686269999999" green="0.59999999999999998" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                 <state key="normal" title="TESTAR">
@@ -241,7 +256,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oiy-go-fYJ">
-                                                <rect key="frame" x="142.5" y="0.0" width="137.5" height="69"/>
+                                                <rect key="frame" x="142.5" y="0.0" width="137.5" height="53"/>
                                                 <color key="backgroundColor" red="0.0039215686269999999" green="0.59999999999999998" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                 <state key="normal" title="SALVAR">
@@ -270,7 +285,7 @@
                     <connections>
                         <outlet property="dbTxtField" destination="iWP-YX-iPs" id="Q0Q-ds-pBv"/>
                         <outlet property="infoTxtView" destination="tUW-Ky-3Sa" id="dmy-dO-1Wv"/>
-                        <outlet property="ipTxtField" destination="K7I-d1-5zP" id="SJI-dR-5v0"/>
+                        <outlet property="ipTxtField" destination="adp-lN-BZm" id="jeD-Nh-tJB"/>
                         <outlet property="passTxtField" destination="no2-nZ-oF8" id="Jxc-jd-ean"/>
                         <outlet property="userTxtField" destination="2Ff-fG-rat" id="Gqh-XA-xed"/>
                     </connections>
@@ -295,7 +310,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKP-4S-xul">
-                                        <rect key="frame" x="8" y="50" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="50" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="dZz-lP-zIK"/>
                                             <constraint firstAttribute="width" constant="50" id="fcr-rr-p8K"/>
@@ -311,7 +326,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FATURAMENTO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDz-Lc-jog">
-                                        <rect key="frame" x="66" y="59" width="230" height="35"/>
+                                        <rect key="frame" x="58" y="59" width="230" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="ZFq-NB-8oO"/>
                                             <constraint firstAttribute="width" constant="230" id="nk5-ue-D1d"/>
@@ -328,7 +343,7 @@
                                     <constraint firstItem="OKP-4S-xul" firstAttribute="top" secondItem="7k2-G8-xr3" secondAttribute="top" constant="50" id="dGd-Ar-E6Z"/>
                                     <constraint firstItem="tDz-Lc-jog" firstAttribute="leading" secondItem="OKP-4S-xul" secondAttribute="trailing" constant="8" id="eOR-Dr-nIq"/>
                                     <constraint firstAttribute="height" constant="128" id="jbl-aZ-z2v"/>
-                                    <constraint firstItem="OKP-4S-xul" firstAttribute="leading" secondItem="7k2-G8-xr3" secondAttribute="leading" constant="8" id="kIb-Rx-VBY"/>
+                                    <constraint firstItem="OKP-4S-xul" firstAttribute="leading" secondItem="7k2-G8-xr3" secondAttribute="leading" id="kIb-Rx-VBY"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="GG9-ak-IjR">
@@ -387,7 +402,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5j-ar-gqD">
-                                        <rect key="frame" x="8" y="35" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="35" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="813-Nc-kgh"/>
                                             <constraint firstAttribute="height" constant="50" id="8VO-rq-pz8"/>
@@ -402,7 +417,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FATURAMENTO POR DATA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0Xp-pI-gIH">
-                                        <rect key="frame" x="58" y="43" width="241" height="34"/>
+                                        <rect key="frame" x="50" y="43" width="249" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="Pva-oI-PUI"/>
                                         </constraints>
@@ -428,7 +443,7 @@
                                     <constraint firstItem="jDh-Uv-1RE" firstAttribute="top" secondItem="K5j-ar-gqD" secondAttribute="bottom" constant="-2" id="NGH-p8-jwq"/>
                                     <constraint firstItem="jDh-Uv-1RE" firstAttribute="leading" secondItem="N4w-Rj-7Ah" secondAttribute="leading" constant="8" id="YEk-dm-ivy"/>
                                     <constraint firstAttribute="height" constant="128" id="bhZ-6K-AYV"/>
-                                    <constraint firstItem="K5j-ar-gqD" firstAttribute="leading" secondItem="N4w-Rj-7Ah" secondAttribute="leading" constant="8" id="dX2-Wx-ay2"/>
+                                    <constraint firstItem="K5j-ar-gqD" firstAttribute="leading" secondItem="N4w-Rj-7Ah" secondAttribute="leading" id="dX2-Wx-ay2"/>
                                     <constraint firstItem="0Xp-pI-gIH" firstAttribute="leading" secondItem="K5j-ar-gqD" secondAttribute="trailing" id="hDq-Mn-h0E"/>
                                     <constraint firstItem="K5j-ar-gqD" firstAttribute="top" secondItem="N4w-Rj-7Ah" secondAttribute="top" constant="35" id="hge-tK-Wng"/>
                                     <constraint firstItem="0Xp-pI-gIH" firstAttribute="top" secondItem="N4w-Rj-7Ah" secondAttribute="top" constant="43" id="lPC-pn-YqZ"/>
